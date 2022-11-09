@@ -1,0 +1,93 @@
+<nav class="navbar nav__menu" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="nav__menu brand-name nav__logo" href="#">
+      <img
+        src="./../../../assets/DK-logos_black.png"
+        width="90px"
+        [ngClass]="darkMode ? 'is-hidden' : ''"
+      />
+      <img
+        src="./../../../assets/DK-logos_white.png"
+        width="90px"
+        [ngClass]="!darkMode ? 'is-hidden' : ''"
+      />
+      DOWAN KIM
+    </a>
+
+    <a
+      role="button"
+      class="navbar-burger"
+      (click)="navbarBurgerExpanded()"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div
+    id="navbarBasicExample"
+    class="navbar-menu"
+    [ngClass]="navbarExpanded ? 'is-active' : 'none'"
+  >
+    <div class="navbar-end">
+      <div class="navbar-item nav__list">
+        <a class="navbar-item nav__item" routerLink="/" (click)="onClickeMenu()"
+          ><i class="uil uil-estate nav__icon"></i> Home
+        </a>
+        <a
+          class="navbar-item nav__item"
+          routerLink="about"
+          (click)="onClickeMenu()"
+        >
+          <i class="uil uil-user nav__icon"></i> About
+        </a>
+
+        <a
+          class="navbar-item nav__item"
+          routerLink="skills"
+          (click)="onClickeMenu()"
+        >
+          <i class="uil uil-file-alt nav__icon"></i> Skills
+        </a>
+        <a
+          class="navbar-item nav__item"
+          routerLink="qualification"
+          (click)="onClickeMenu()"
+          ><i class="uil uil-briefcase-alt nav__icon"></i> Qualification
+        </a>
+        <a
+          class="navbar-item nav__item"
+          routerLink="portfolio"
+          (click)="onClickeMenu()"
+          ><i class="uil uil-scenery nav__icon"></i> Portfolio
+        </a>
+        <a
+          class="navbar-item nav__item"
+          routerLink="contact"
+          (click)="onClickeMenu()"
+          ><i class="uil uil-message nav__icon"></i> Contact
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- DarkMode Button -->
+  <div
+    class="nav__btns is-justify-content-right"
+    (click)="onLightMode()"
+    [ngClass]="!lightMode ? 'is-hidden' : ''"
+  >
+    <i class="uil uil-moon change-theme"></i>
+  </div>
+  <!-- LightMode Button -->
+  <div
+    class="nav__btns is-justify-content-right"
+    (click)="onDarkMode()"
+    [ngClass]="!darkMode ? 'is-hidden' : ''"
+  >
+    <i class="uil uil-sun change-theme"></i>
+  </div>
+</nav>

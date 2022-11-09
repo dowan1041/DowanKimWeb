@@ -1,0 +1,117 @@
+<section class="portfolio section columns">
+  <div class="column"></div>
+  <div class="column is-half">
+    <h2 class="section__title">Portfolio</h2>
+    <span class="section__subtitle">Most Recent Work</span>
+    <div class="swiper__container">
+      <swiper
+        [slidesPerView]="1"
+        [loop]="true"
+        [centeredSlides]="true"
+        [spaceBetween]="10"
+        [navigation]="{
+          prevEl: '.swiper-button-prev',
+          nextEl: '.swiper-button-next'
+        }"
+        [pagination]="{
+          el: '.swiper-pagination',
+          clickable: true
+        }"
+      >
+        <!-- --------------- Portfolio Start --------------- -->
+        <ng-template swiperSlide>
+          <div class="portfolio__content grid">
+            <img
+              src="./../../../assets/Portfolio_Website.png"
+              alt=""
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Portfolio Website</h3>
+              <p class="portfolio__description">
+                Personal Portfolio Website. <br />
+                <br />
+                Skills : Angular, Swiper JS, Bulma <br />
+                * Dark Mode is added (2022.10.17)
+              </p>
+              <a
+                href="#"
+                target="_blank"
+                class="button button--flex button--small portfolio__button"
+              >
+                Demo
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </ng-template>
+        <!-- --------------- Portfolio End --------------- -->
+        <!-- --------------- Portfolio Start --------------- -->
+        <ng-template swiperSlide>
+          <div class="portfolio__content grid">
+            <img
+              src="./../../../assets/Task_Manager_App.png"
+              alt=""
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Task Manager App</h3>
+              <p class="portfolio__description">
+                Full Stack Application. <br />
+                This app shows how I create and manage <br />
+                api with data schemas. <br />
+                <br />
+                skills: Angular, MondoDB, Bulma
+              </p>
+              <a
+                href="https://dktaskmanager.herokuapp.com/lists"
+                target="_blank"
+                class="button button--flex button--small portfolio__button"
+              >
+                Demo
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </ng-template>
+        <!-- --------------- Portfolio End --------------- -->
+        <!-- --------------- Portfolio Start --------------- -->
+        <ng-template swiperSlide>
+          <div class="portfolio__content grid">
+            <img
+              src="./../../../assets/Jiujitsu_homepage.png"
+              alt=""
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Jujitsu Homepage</h3>
+              <p class="portfolio__description">
+                HTML/CSS/JS Homepage <br />
+                This app shows how I handle HTML, CSS, JS <br />
+                <br />
+                skills: HTML, CSS, JS
+              </p>
+              <a
+                href="https://www.flushingjiujitsu.com/index.html"
+                target="_blank"
+                class="button button--flex button--small portfolio__button"
+              >
+                Demo
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </ng-template>
+        <!-- --------------- Portfolio End --------------- -->
+      </swiper>
+      <button type="button" class="swiper-button-prev">
+        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+      </button>
+      <button type="button" class="swiper-button-next">
+        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+      </button>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <div class="column"></div>
+</section>

@@ -1,0 +1,116 @@
+<section class="testimonial section columns">
+  <div class="column"></div>
+  <div class="column is-half">
+    <h2 class="section__title">Testimonial</h2>
+    <span class="section__subtitle">My Client Saying</span>
+
+    <div class="testimonial__container container">
+      <swiper
+        [loop]="true"
+        [slidesPerView]="2"
+        [grabCursor]="true"
+        [slidesPerView]="'auto'"
+        [spaceBetween]="2"
+        [pagination]="{
+          el: '.swiper-pagination',
+          clickable: true,
+          dynamicBullets: true
+        }"
+        class="testimonial__swiper"
+      >
+        <!-- --------------- TESTIMONIAL --------------- -->
+        <ng-template swiperSlide>
+          <div class="testimonial__content">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img
+                  src="./../../../assets/DowanKimProfilePic.png"
+                  alt=""
+                  class="testimonial__img"
+                />
+                <div>
+                  <h3 class="testimonial__name">Dowan Kim</h3>
+                  <span class="testimonial__client">Client</span>
+                </div>
+              </div>
+              <div>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+              </div>
+            </div>
+            <p class="testimonial__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+              excepturi quae numquam repellat repellendus earum! Itaque sit nam
+              ipsum. Sunt!
+            </p>
+          </div>
+        </ng-template>
+        <!-- --------------- TESTIMONIAL --------------- -->
+        <ng-template swiperSlide>
+          <div class="testimonial__content">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img
+                  src="./../../../assets/DowanKimProfilePic.png"
+                  alt=""
+                  class="testimonial__img"
+                />
+                <div>
+                  <h3 class="testimonial__name">Dowan Kim</h3>
+                  <span class="testimonial__client">Client</span>
+                </div>
+              </div>
+              <div>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+              </div>
+            </div>
+            <p class="testimonial__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+              excepturi quae numquam repellat repellendus earum! Itaque sit nam
+              ipsum. Sunt!
+            </p>
+          </div>
+        </ng-template>
+        <!-- --------------- TESTIMONIAL --------------- -->
+        <ng-template swiperSlide>
+          <div class="testimonial__content">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img
+                  src="./../../../assets/DowanKimProfilePic.png"
+                  alt=""
+                  class="testimonial__img"
+                />
+                <div>
+                  <h3 class="testimonial__name">Dowan Kim</h3>
+                  <span class="testimonial__client">Client</span>
+                </div>
+              </div>
+              <div>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+              </div>
+            </div>
+            <p class="testimonial__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+              excepturi quae numquam repellat repellendus earum! Itaque sit nam
+              ipsum. Sunt!
+            </p>
+          </div>
+        </ng-template>
+      </swiper>
+      <div class="swiper-pagination swiper-pagination-testimonial"></div>
+    </div>
+  </div>
+  <div class="column"></div>
+</section>

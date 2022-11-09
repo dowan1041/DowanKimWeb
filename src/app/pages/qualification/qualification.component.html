@@ -1,0 +1,147 @@
+<section class="columns qualification section">
+  <div class="column"></div>
+  <div class="column is-half">
+    <h2 class="section__title">Qualification</h2>
+    <span class="section__subtitle">My Personal Journey</span>
+
+    <div class="qualification__container container">
+      <div class="qualification__tabs">
+        <div
+          class="qualification__button button--flex"
+          (click)="onShowEducation()"
+          [ngClass]="showEducationClicked ? 'clicked' : ''"
+        >
+          <i class="uil uil-graduation-cap qualification__icon"></i>
+          Education
+        </div>
+        <div
+          class="qualification__button button--flex"
+          (click)="onShowWork()"
+          [ngClass]="showWorkClicked ? 'clicked' : ''"
+        >
+          <i class="uil uil-briefcase-alt qualification__icon"></i>
+          Work
+        </div>
+      </div>
+      <div class="qualification__sections">
+        <!----------------- Qualification Content 1 Education ----------------->
+        <div
+          class="qualification__content"
+          [ngClass]="!showEducation ? 'is-hidden' : ''"
+        >
+          <!----------------- Qualification 1 ----------------->
+          <div class="qualification__data">
+            <div>
+              <h3 class="qualification__title">
+                Full Stack Web Develop Boot Camp
+              </h3>
+              <span class="qualification__subtitle"
+                >Full Stack Web Development</span
+              >
+              <div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                Jan 2018 - Jun 2019
+              </div>
+            </div>
+            <div>
+              <span class="qualification__rounder"></span>
+              <span class="qualification__line"></span>
+            </div>
+          </div>
+          <!----------------- Qualification 2 ----------------->
+          <div class="qualification__data">
+            <div></div>
+            <div>
+              <span class="qualification__rounder"></span>
+              <span class="qualification__line"></span>
+            </div>
+            <div>
+              <h3 class="qualification__title">
+                Queens College of The City University of New York
+              </h3>
+              <span class="qualification__subtitle"
+                >Bachelor of Applied Mathematics</span
+              >
+              <div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                Sept 2009 - May 2014
+              </div>
+            </div>
+          </div>
+          <!----------------- Qualification 3 ----------------->
+          <!-- <div class="qualification__data">
+            <div>
+              <h3 class="qualification__title">
+                Queens College of The City University of New York
+              </h3>
+              <span class="qualification__subtitle">School Name</span>
+              <div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                2009-2014
+              </div>
+            </div>
+            <div>
+              <span class="qualification__rounder"></span>
+              <span class="qualification__line"></span>
+            </div>
+          </div> -->
+        </div>
+        <!----------------- Qualification Content 2 Work----------------->
+        <div
+          class="qualification__content"
+          [ngClass]="!showWork ? 'is-hidden' : ''"
+        >
+          <!----------------- Qualification 1 ----------------->
+          <div class="qualification__data">
+            <div>
+              <h3 class="qualification__title">US ARMY</h3>
+              <span class="qualification__subtitle"
+                >New York National Guard</span
+              >
+              <div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                Dec 2022 - Present
+              </div>
+            </div>
+            <div>
+              <span class="qualification__rounder"></span>
+              <span class="qualification__line"></span>
+            </div>
+          </div>
+          <!----------------- Qualification 2 ----------------->
+          <div class="qualification__data">
+            <div></div>
+            <div>
+              <span class="qualification__rounder"></span>
+              <span class="qualification__line"></span>
+            </div>
+            <div>
+              <h3 class="qualification__title">Mathematics Instructor</h3>
+              <span class="qualification__subtitle">Freelancer</span>
+              <div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                Sep 2015 - Present
+              </div>
+            </div>
+          </div>
+          <!----------------- Qualification 3 ----------------->
+          <div class="qualification__data">
+            <div>
+              <h3 class="qualification__title">Director</h3>
+              <span class="qualification__subtitle">RECAS Academy</span>
+              <div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                Jun 2014 - Sept 2015
+              </div>
+            </div>
+            <div>
+              <span class="qualification__rounder"></span>
+              <span class="qualification__line"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column"></div>
+</section>
